@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import MovieList from '../components/MovieList'
+import './MovieBox.css'
 
 class MovieBox extends Component {
 
@@ -38,8 +39,11 @@ class MovieBox extends Component {
 
   render(){
     return(
-      <article>
+      <article id="movie-container">
         <MovieList movies={this.state.movies}/>
+        <form action="https://www.imdb.com/calendar/?region=gb">
+          <input className="button" type="submit" value="View more upcoming releases >>"/>
+        </form>
       </article>
     )
   }
