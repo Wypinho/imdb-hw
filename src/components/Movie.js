@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Movie({children}){
+function Movie({url, children}){
   return(
     <li>
-      <p>{children}</p>
+      <a href={url}>
+        <p>{children}</p>
+      </a>
     </li>
   )
 }

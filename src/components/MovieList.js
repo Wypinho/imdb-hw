@@ -6,6 +6,7 @@ function MovieList({movies}){
   const movieComponents = movies.map(movie => {
     return (
       <Movie
+        url={movie.url}
         key={movie.id}
       >
         {movie.name}
@@ -15,6 +16,7 @@ function MovieList({movies}){
 
   return (
     <ul>
+      <h2>Upcoming film releases for the UK</h2>
       {movieComponents}
     </ul>
   )
