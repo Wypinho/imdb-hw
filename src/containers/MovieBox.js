@@ -1,4 +1,5 @@
-import React {Component} from 'react'
+import React, {Component} from 'react'
+import MovieList from '../components/MovieList'
 
 class MovieBox extends Component {
 
@@ -38,7 +39,7 @@ class MovieBox extends Component {
   render(){
     return(
       <article>
-      
+        <MovieList movies={this.state.movies}/>
       </article>
     )
   }
